@@ -58,14 +58,64 @@
       <h1 class="pt-5">Loan Processor Dashboard</h1>
       <center><h4 class="pt-4">List of Customers</h4></center>
       <br>
-      <center>
-        <div class="pt-2">
-            <a class="btn btn-primary py-2 px-3" href="LoanProcessorDash2.html">
-                <svg width="35px" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path></svg>
-                <span class="h3"> &nbsp; Fetch Data</span> 
-            </a>
-          </div>
-      </center>
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Name</th>
+            <th scope="col">Account Aggregator ID</th>
+            <th scope="col">Consent Recieved</th>
+            <th scope="col">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Example Name</td>
+            <td>example@aa</td>
+            <td><p class="text-success">Yes</p></td>
+            <td>
+              <button type="button" class="btn btn-tertiary px-3" onclick="window.location.href='LPCustomerDetails.html'">
+                Proceess
+              </button>
+              &nbsp;&nbsp;
+              <button type="button" class="btn btn-danger px-3" onclick="window.location.href='LoanConfiguration.html'">
+                Configure
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Rajkumar</td>
+            <td>raj@onemoney</td>
+            <td><p class="text-danger">No</p></td>
+            <td>
+              <button type="button" class="btn btn-tertiary px-3" onclick="window.location.href='LPCustomerDetails.html'" disabled>
+                Proceess
+              </button>
+              &nbsp;&nbsp;
+              <button type="button" class="btn btn-danger px-3" onclick="window.location.href='LoanConfiguration.html'" disabled>
+                Configure
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>john@perfious</td>
+            <td><p class="text-danger">No</p></td>
+            <td>
+              <button type="button" class="btn btn-tertiary px-3" onclick="window.location.href='LPCustomerDetails.html'" disabled>
+                Proceess
+              </button>
+                &nbsp;&nbsp;
+              <button type="button" class="btn btn-danger px-3" onclick="window.location.href='LoanConfiguration.html'" disabled>
+                Configure
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     
 
